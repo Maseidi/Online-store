@@ -1,0 +1,12 @@
+.empty {
+    margin: 2rem;
+    padding: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.empty > p {
+    font-size: 3rem;
+}

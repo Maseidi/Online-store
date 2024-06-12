@@ -5,6 +5,7 @@ import Products from '../components/Products'
 import '../style/products.css'
 import { searchCommand, searchReducer } from '../store/search'
 import { AppContext } from '../App'
+import Empty from '../components/Empty'
 
 export const ProductsContext = createContext({})
 
@@ -32,7 +33,7 @@ const ProductsPage = () => {
         <div>
             <Header toProductCreation={true} toCart={true}/>
             <Fields/>
-            <Products/>
+            {products.length === 0 ? <Empty message={'no prodcuts to show!'}/> : <Products/>}
         </div>
     </ProductsContext.Provider>
   )
