@@ -1,65 +1,65 @@
 .product {
-    margin: 3rem;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    overflow: hidden;
+  margin: 3rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  overflow: hidden;
 }
 
 .product > .upper {
-    height: 22rem;
-    width: 100%;
-    display: flex;
-    gap: 3rem;
+  height: 22rem;
+  width: 100%;
+  display: flex;
+  gap: 3rem;
 }
 
 .product > .upper > img {
-    height: 100%;
+  height: 100%;
 }
 
 .product > .upper > h1 {
-    font-size: 1.75rem !important;
-    font-weight: bold;
+  font-size: 1.75rem !important;
+  font-weight: bold;
 }
 
 .product > p {
-    text-transform: capitalize;
-    font-size: 1.5rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
 }
 
 .product > .price {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .add-to-cart {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    gap: 3rem;
-    align-items: end;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  align-items: end;
 }
 
 .add-to-cart > div {
-    width: 20rem;
+  width: 20rem;
 }
 
 .add-to-cart > div > p {
-    font-size: 2rem;
-    text-transform: capitalize;
-    font-weight: bold;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 .add-to-cart > div > button {
-    padding: 10px;
-    background-color: forestgreen;
-    color: white;
-    border-radius: 5px;
-    text-transform: capitalize;
+  padding: 10px;
+  background-color: forestgreen;
+  color: white;
+  border-radius: 5px;
+  text-transform: capitalize;
 }
 
 .add-to-cart > div > button:hover {
-    filter: brightness(120%);
+  filter: brightness(120%);
 }

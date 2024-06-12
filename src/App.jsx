@@ -10,20 +10,28 @@ import ProductCreation from './views/ProductCreation'
 export const AppContext = createContext({})
 
 const App = () => {
-
   const [deleted, setDeleted] = useState([])
   const [created, setCreated] = useState([])
   const [cartState, cartDispatch] = useReducer(cartReducer, cart)
 
   return (
-    <AppContext.Provider value={{deleted, setDeleted, cartState, cartDispatch, created, setCreated}}>
+    <AppContext.Provider
+      value={{
+        deleted,
+        setDeleted,
+        cartState,
+        cartDispatch,
+        created,
+        setCreated
+      }}
+    >
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<MainPage/>}/>
-          <Route path='/products' element={<ProductsPage/>}/>
-          <Route path='/products/:id' element={<SingleProduct/>}/>
-          <Route path='/products/create' element={<ProductCreation/>}/>
-          <Route path='/cart' element={<Cart/>} />
+          <Route path="/" element={<MainPage />} />
+          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/products/:id" element={<SingleProduct />} />
+          <Route path="/products/create" element={<ProductCreation />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </AppContext.Provider>

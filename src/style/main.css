@@ -1,29 +1,29 @@
 .main-menu-box {
-    padding: 50px;
-    border-radius: 5px;
-    border: 1px solid black;
-    margin: 100px auto;
-    width: max-content;
+  padding: 50px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 100px auto;
+  width: max-content;
 }
 
 .main-menu-box > div {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
 }
 
 .main-menu-btn {
-    background-color: forestgreen;
-    color: white;
-    text-transform: capitalize;
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: 300ms;
+  background-color: forestgreen;
+  color: white;
+  text-transform: capitalize;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 300ms;
 }
 
 .main-menu-btn:hover {
-    background-color: chocolate;
-    filter: brightness(120%);
+  background-color: chocolate;
+  filter: brightness(120%);
 }

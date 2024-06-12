@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import ProductCard from "./ProductCard";
-import { ProductsContext } from "../views/ProductsPage";
+import React, { useContext } from 'react'
+import ProductCard from './ProductCard'
+import { ProductsContext } from '../views/ProductsPage'
 
 const Products = () => {
-  const { products } = useContext(ProductsContext);
+  const { products } = useContext(ProductsContext)
 
   return (
     <div className="products">
@@ -19,7 +19,7 @@ const Products = () => {
         />
       ))}
     </div>
-  );
-};
+  )
+}
 
 export default Products

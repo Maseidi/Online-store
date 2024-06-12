@@ -5,8 +5,8 @@ import CreateFields from '../components/CreateFields'
 const ProductCreation = () => {
   return (
     <div>
-        <Header toProducts={true} toCart={true}/>
-        <CreateFields/>
+      <Header toProducts={true} toCart={true} />
+      <CreateFields />
     </div>
   )
 }

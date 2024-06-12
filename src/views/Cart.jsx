@@ -5,8 +5,8 @@ import CartItems from '../components/CartItems'
 const Cart = () => {
   return (
     <div>
-      <Header toProductCreation={true} toProducts={true}/>
-      <CartItems/>
+      <Header toProductCreation={true} toProducts={true} />
+      <CartItems />
     </div>
   )
 }
