@@ -1,0 +1,23 @@
+.combo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.combo > label {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.combo > select {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+}
+
+.combo > select:focus {
+  outline: 5px solid lightblue;
+}

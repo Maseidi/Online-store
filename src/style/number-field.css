@@ -1,0 +1,22 @@
+.number-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.number-field > label {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.number-field > input {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.25rem;
+}
+
+.number-field > input:focus {
+  outline: 5px solid lightblue;
+}

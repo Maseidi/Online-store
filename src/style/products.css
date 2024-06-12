@@ -1,0 +1,133 @@
+.fields {
+    margin: 20px 20px 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-flow: row wrap;
+    align-items: end;
+    font-size: 1.25rem;
+}
+
+.fields > div > button {
+    padding: 10px;
+    background-color: forestgreen;
+    color: white;
+    border-radius: 5px;
+    transition: 300ms;
+}
+
+.fields > div > button:hover {
+    filter: brightness(120%);
+}
+
+.products {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    margin: 20px;
+    gap: 10px;
+}
+
+.products > .product-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 1.25rem;
+}
+
+.product-card > .image {
+    align-self: center;
+    height: 13rem;
+}
+
+.product-card > .title {
+    font-weight: bold;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1; 
+    -webkit-box-orient: vertical;
+    font-size: 1.5rem;
+}
+
+.product-card > .desc {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
+
+.product-card > .category {
+    text-transform: capitalize;
+}
+
+.product-card > .price {
+    font-weight: bold;
+}
+
+.product-card > .options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+}
+
+.product-card > .options > a > .details, .product-card > .options > .delete {
+    padding: 5px;
+    background-color: forestgreen;
+    color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.product-card > .options > a > .details:hover, .product-card > .options > .delete:hover {
+    filter: brightness(150%);
+}
+
+.product-card > .options > a > .details {
+    background-color: forestgreen;
+}
+
+.product-card > .options > .delete {
+    background-color: crimson;
+}
+
+@media screen and (min-width: 1200px) {
+    .product-card {
+        width: calc((100% - 30px) / 4);
+    }
+    .fields > div {
+        width: calc((100% - 90px) / 4);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .product-card {
+        width: calc((100% - 20px) / 3);
+    }
+    .fields > div {
+        width: calc((100% - 60px) / 3);
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .product-card {
+        width: calc((100% - 10px) / 2);
+    }
+    .fields > div {
+        width: calc((100% - 30px) / 2);
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 576px) {
+    .product-card {
+        width: 100%;
+    }
+    .fields > div {
+        width: 100%;
+    }
+}

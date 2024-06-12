@@ -1,0 +1,27 @@
+.product-creation-fields {
+    margin: 2rem;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.product-creation-fields > h1 {
+    align-self: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.product-creation-fields > div > button {
+    background-color: forestgreen;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.product-creation-fields > div> button:hover {
+    filter: brightness(120%);
+}
