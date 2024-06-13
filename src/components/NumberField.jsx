@@ -7,19 +7,19 @@ const NumberField = (params) => {
     label,
     min = Number.MIN_SAFE_INTEGER,
     max = Number.MAX_SAFE_INTEGER,
-    type,
-    dispatch
+    type = 'useState',
+    callBackFn
   } = params
 
   const changeValue = (e) => {
-    if (typeof type === 'string') {
-      dispatch({ type, payload: { newValue: e.target.value } })
+    if (type !== 'useState') {
+      callBackFn({ type, payload: { newValue: e.target.value } })
     } else {
       let result = e.target.value
       if (e.target.value < min) result = min
       if (e.target.value > max) result = max
       e.target.value = result
-      type(Number(result))
+      callBackFn(Number(result))
     }
   }
 

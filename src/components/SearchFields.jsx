@@ -65,7 +65,7 @@ const SearchFields = () => {
         min={0}
         max={1000000}
         type={CHANGE_MIN_PRICE}
-        dispatch={searchDispatch}
+        callBackFn={searchDispatch}
       />
       <NumberField
         id={'max-price'}
@@ -73,7 +73,7 @@ const SearchFields = () => {
         min={0}
         max={1000000}
         type={CHANGE_MAX_PRICE}
-        dispatch={searchDispatch}
+        callBackFn={searchDispatch}
       />
       <Combo
         id={'category'}

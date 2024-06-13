@@ -52,7 +52,7 @@ const CreateFields = () => {
         id={'price'}
         label={'price'}
         type={CHANGE_PRICE}
-        dispatch={createDispatch}
+        callBackFn={createDispatch}
       />
       <Combo
         id={'category'}

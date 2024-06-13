@@ -32,7 +32,7 @@ const Product = (params) => {
           label={'amount'}
           min={0}
           max={100}
-          type={setAmount}
+          callBackFn={setAmount}
         />
         <div>
           <p>total: {(amount * price).toFixed(2)} $</p>
