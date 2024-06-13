@@ -57,7 +57,7 @@ const SearchFields = () => {
         id={'title'}
         label={'title'}
         type={CHANGE_TITLE}
-        dispatch={searchDispatch}
+        callBackFn={searchDispatch}
       />
       <NumberField
         id={'min-price'}
@@ -80,7 +80,7 @@ const SearchFields = () => {
         label={'category'}
         valueMap={valueMap}
         type={CHANGE_CATEGORY}
-        dispatch={searchDispatch}
+        callBackFn={searchDispatch}
       />
       <div>
         <button onClick={search}>search</button>

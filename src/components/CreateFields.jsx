@@ -39,13 +39,13 @@ const CreateFields = () => {
         id={'title'}
         label={'title'}
         type={CHANGE_TITLE}
-        dispatch={createDispatch}
+        callBackFn={createDispatch}
       />
       <TextField
         id={'description'}
         label={'description'}
         type={CHANGE_DESCRIPTION}
-        dispatch={createDispatch}
+        callBackFn={createDispatch}
         rows={10}
       />
       <NumberField
@@ -59,13 +59,13 @@ const CreateFields = () => {
         label={'category'}
         valueMap={valueMap}
         type={CHANGE_CATEGORY}
-        dispatch={createDispatch}
+        callBackFn={createDispatch}
       />
       <FileField
         id={'image'}
         label={'image'}
         type={CHANGE_IMAGE}
-        dispatch={createDispatch}
+        callBackFn={createDispatch}
       />
       <div>
         <button onClick={createProduct}>Create</button>

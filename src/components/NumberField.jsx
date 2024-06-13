@@ -14,13 +14,13 @@ const NumberField = (params) => {
   const changeValue = (e) => {
     if (type !== 'useState') {
       callBackFn({ type, payload: { newValue: e.target.value } })
-    } else {
-      let result = e.target.value
-      if (e.target.value < min) result = min
-      if (e.target.value > max) result = max
-      e.target.value = result
-      callBackFn(Number(result))
+      return
     }
+    let result = e.target.value
+    if (e.target.value < min) result = min
+    if (e.target.value > max) result = max
+    e.target.value = result
+    callBackFn(Number(result))
   }
 
   return (

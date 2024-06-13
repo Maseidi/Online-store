@@ -2,10 +2,16 @@ import React from 'react'
 import '../style/combo.css'
 
 const Combo = (params) => {
-  const { id, label, valueMap, type, dispatch } = params
+  const { id, label, valueMap, type = 'useState', callBackFn } = params
 
-  const changeValue = (e) =>
-    dispatch({ type, payload: { newValue: e.target.value } })
+  const changeValue = (e) => {
+    if ( type !== 'useState' ) {
+      callBackFn({ type, payload: { newValue: e.target.value } })
+      return
+    } 
+    callBackFn(e.target.value)
+  }
+    
 
   return (
     <div className="combo">

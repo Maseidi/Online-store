@@ -2,14 +2,18 @@ import React from 'react'
 import '../style/file-field.css'
 
 const FileField = (params) => {
-  const { id, label, type, dispatch } = params
+  const { id, label, type = 'useState', callBackFn } = params
 
   const changeValue = (e) => {
     const image = e.target.value.replace(
       'C:\\fakepath\\',
       '../src/assets/images/products/'
     )
-    dispatch({ type, payload: { newValue: image } })
+    if ( type !== 'useStae' ) {
+      callBackFn({ type, payload: { newValue: image } })
+      return
+    }
+    callBackFn(image)
   }
 
   return (
