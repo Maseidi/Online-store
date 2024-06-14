@@ -5,13 +5,12 @@ const Combo = (params) => {
   const { id, label, valueMap, type = 'useState', callBackFn } = params
 
   const changeValue = (e) => {
-    if ( type !== 'useState' ) {
+    if (type !== 'useState') {
       callBackFn({ type, payload: { newValue: e.target.value } })
       return
-    } 
+    }
     callBackFn(e.target.value)
   }
-    
 
   return (
     <div className="combo">

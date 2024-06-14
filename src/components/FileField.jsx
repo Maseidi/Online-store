@@ -9,7 +9,7 @@ const FileField = (params) => {
       'C:\\fakepath\\',
       '../src/assets/images/products/'
     )
-    if ( type !== 'useStae' ) {
+    if (type !== 'useState') {
       callBackFn({ type, payload: { newValue: image } })
       return
     }
